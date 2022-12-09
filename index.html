@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body onload="dataLoad()">
+    <img src="./icon.png" alt="burger-icon" class="icon" onclick="toggleBurger()">
+    <div id="myLinks">
+        <ul>
+            <li><a onclick="swap()">Swap 4 and 5</a></li>
+            <li><a onclick="area()">Oval area</a></li>
+            <li><a onclick="countWords()">Count words</a></li>
+            <li><a onclick="">Align left</a></li>
+        </ul>
+        <fieldset>
+            <legend>Choose blocks to align:</legend>
+            <div>
+              <input type="checkbox" id="third" name="third" class="third">
+              <label for="third">3</label>
+            </div>
+            <div>
+              <input type="checkbox" id="fourth" name="fourth" class="fourth">
+              <label for="fourth">4</label>
+            </div>
+            <div>
+                <input type="checkbox" id="fifth" name="fifth" class="fifth">
+                <label for="fifth">5</label>
+              </div>
+        </fieldset>
+      </div>
+    <header>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed accusamus quo natus quam magni illum iusto neque incidunt quas, nemo eius repudiandae sequi maxime magnam accusantium totam et optio. Officiis!</p>
+        <h1>Flexbox</h1>
+    </header>
+    <main>
+        <div class="main-left">
+            <div class="two">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="five">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rerum possimus voluptate ullam earum consequuntur</p>
+                <p>itaque praesentium veritatis ipsam et eveniet obcaecati quam hic, perferendis enim error blanditiis numquam laboriosam?
+                    Voluptas amet a explicabo, repudiandae vero corporis?</p>
+            </div>
+        </div>
+        <div class="main-center">
+            <div class="three">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente eius qui cum quis nostrum quo tempore perferendis error numquam. Laboriosam consectetur voluptatum officia et obcaecati illo aperiam, laudantium sapiente commodi?
+                Animi, cupiditate. Nostrum quisquam ratione amet nesciunt officiis, nam necessitatibus impedit laboriosam vitae nemo facere, sint atque eos. Sed exercitationem, reprehenderit dolorem accusantium commodi voluptate harum. Est qui maiores corrupti.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente eius qui cum quis nostrum quo tempore perferendis error numquam. Laboriosam consectetur voluptatum officia et obcaecati illo aperiam, laudantium sapiente commodi?
+                    Animi, cupiditate.</p>
+                <label for="words-count">Enter text for words counting:</label>
+
+                <textarea class="myTextArea" id="words-count" name="words-count" rows="4" cols="50"></textarea>
+            </div>
+            <div class="six">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro voluptate tenetur.</p>
+            </div>
+        </div>
+        <div class="main-right">
+            <ul>
+                <li><a onclick="swap()">Swap 4 and 5</a></li>
+                <li><a onclick="area()">Oval area</a></li>
+                <li><a onclick="countWords()">Count words</a></li>
+                <li><a class="align-left-button" onclick="">Align left</a></li>
+            </ul>
+            <fieldset>
+                <legend>Choose blocks to align:</legend>
+                <div>
+                  <input type="checkbox" id="third" name="third" class="third">
+                  <label for="third">3</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="fourth" name="fourth" class="fourth">
+                  <label for="fourth">4</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="fifth" name="fifth" class="fifth">
+                    <label for="fifth">5</label>
+                  </div>
+            </fieldset>
+        </div>
+    </main>
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed accusamus quo natus quam magni illum iusto neque incidunt quas, nemo eius repudiandae sequi maxime magnam accusantium totam et optio. Officiis!</p>
+        <h1>Header</h1>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
